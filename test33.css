@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+
+body{
+	background-image: url(bg.jpg);
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+    margin: 0 auto;
+
+}
+
+
+/*Хедер*/
+
+header{
+
+	background-color: white;
+	height: 85px;
+	box-shadow:2px 2px 40px -15px black;
+
+
+}
+
+.container-head{
+
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: left;
+
+}
+
+
+.title-logo {
+
+	font-size: 20px;
+	font-weight:600;
+	line-height: 85px;
+	margin-left: 480px;
+}
+
+
+/*Контейнер с тестом*/
+
+.container-main{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+.test-frame{
+	width: 1000px;
+	height: 700px;
+	background-color: white;
+	margin-top: 40px;
+	box-shadow:2px 2px 40px -15px black;
+	border-radius: 34px;
+}
+
+.test-inputs{
+
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-around;
+
+}
+.back-btn,
+.go-btn,
+.check-btn,
+.glav-back-btn,
+.see-correct-answer-btn{
+
+	width: 200px;
+	height: 40px;
+	background-color: white;
+	border: none;
+	box-shadow:2px 2px 40px -15px black;
+	border-radius: 35px;
+	font-weight:600;
+	font-size:14px;
+	color: black;
+
+
+}
+
+.back-btn:hover,
+.go-btn:hover,
+.check-btn:hover,
+.glav-back-btn:hover,
+.btn-choose-task:hover,
+.btn-start-task:hover,
+.see-correct-answer-btn:hover{
+	background-color: rgb(212, 212, 212);
+	transition: all 0.4s ease;
+
+}
+
+
+
+/*Таск-бар*/
+
+.task-bar-choose{
+	margin-top: 10px;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.btn-choose-task {
+
+	height:40px;
+	width: 150px;
+	height: 40px;
+	background-color: white;
+	border: none;
+	box-shadow:2px 2px 40px -15px black;
+	border-radius: 35px;
+	font-weight:600;
+	font-size:13px;
+	color: black;
+
+}
+
+
+.btns-bar-column{
+	height: 100%;
+	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+
+}
+
+.btns-bar{
+
+
+
+}
+
+
+
+/**/
+.frame-container{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+}
+
+.btn-start-task{
+
+	height:40px;
+	width: 200px;
+	height: 40px;
+	background-color: white;
+	border: none;
+	box-shadow:2px 2px 40px -15px black;
+	border-radius: 35px;
+	font-weight:500;
+	font-size:13px;
+	color: black;
+
+}
+
+.title-frame p{
+
+line-height:30px;
+
+}
+
+
+
+/*JS стили для скрипта*/
+
+.btn-choose-task.active{
+
+	border-left: 4px solid rgb(153, 51, 136); /* Измените цвет и ширину бордера по своему вкусу */
+    background-color: rgb(212, 212, 212);
+	transition: 0s;
+
+}
+
+.btn-choose-task.complete{
+
+background-color: rgb(149, 241, 11);
+
+}
+
+.result-input{
+
+	border-radius:100px; 
+	border: 1px grey solid; 
+	background-color: white;
+	margin:10px;
+	width: 200px;
+	height: 20px;
+	font-size: 20px;
+
+}
+
+.result-input-drag{
+
+width: 300px;
+height: 40px;
+text-align: center;
+
+}
+
+.result-input:focus{
+
+outline: 1px grey solid;
+transition: all 5s ease;
+
+}	
+.task-text{
+
+text-align: center;
+
+
+}
+
+
+.task-frame{
+
+margin-bottom: 100px;
+
+}
+
+.see-correct-answer-btn.hide{
+
+display: none;
+
+}
+
+.dropzone{
+
+display: flex;
+justify-content: center;
+
+}
+
+.result-input-drag{
+
+width: 90%;
+border-radius: 10px;
+color: white;
+
+}
+.result-input-drag:focus{
+	background-color: white;
+outline: 1px solid grey;
+transition: all 1s ease;
+color: black;
+}
+.result-input-drag:not(:focus){
+	transition: all 0.4s ease;
+	background-color: rgb(92, 92, 92);
+}
+.result-input-drag:not(:focus)::placeholder{
+color: white;
+}
+
+.drag-elements{
+
+display: flex;
+margin-bottom:15px ;
+}
+.drag-item{
+
+border: 1px black solid;
+border-radius: 10px;
+padding: 5px;
+width: 30%;
+text-align: center;
+}
+.drag-item:not(:first-child){
+
+margin-left: 5px;
+
+}
+
+
