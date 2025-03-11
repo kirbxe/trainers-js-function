@@ -2,14 +2,13 @@
 
 
 body{
-	background-image: url(bg.jpg);
+	background-image: url("../image/bg.jpg");
 	font-family: Inter;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
     margin: 0 auto;
-
 }
 
 
@@ -140,13 +139,6 @@ header{
 
 }
 
-.btns-bar{
-
-
-
-}
-
-
 
 /**/
 .frame-container{
@@ -271,20 +263,28 @@ color: black;
 }
 .result-input-drag:not(:focus)::placeholder{
 color: white;
+
 }
 
 .drag-elements{
 
 display: flex;
 margin-bottom:15px ;
+
+
 }
 .drag-item{
-
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
 border: 1px black solid;
 border-radius: 10px;
 padding: 5px;
-width: 30%;
+width: 40%;
 text-align: center;
+margin: 0;
+padding: 0;
 }
 .drag-item:not(:first-child){
 
