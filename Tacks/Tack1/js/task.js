@@ -13,7 +13,7 @@
 // делаем функцию для просмотра правильного ответа
 
 let IsChecked = false;
- // ресетает флаг
+ 
 	function task1(){
 		
 		const task1 = document.getElementById("task1");
@@ -103,12 +103,8 @@ function SeeCorrectAnswer1(){
 	}
 
 	function ResetIsChecked(){
-
 		IsChecked = false;
-		
 		}
-
-
 function task2(){
 		
 		const task1 = document.getElementById("task1");
