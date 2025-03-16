@@ -994,7 +994,7 @@ console.log(findCommonElements); <span style = "color: grey; ">// [4, 5]</span>
 				let answer = document.getElementById("result-input-drag").value.trim();
 				let result = document.getElementById("result");
 				const task10 = document.getElementById("task10");
-				  if (answer === "function isPalindrome(str){ return str === str .split('') .reverse() .join(''); } " ) {
+				  if (answer === "function isPalindrome(str){ return str === str .split('') .reverse() .join(''); }" ) {
 					result.innerText = 'Правильно!';
 					task10.classList.add("complete");
 					IsChecked = true;
